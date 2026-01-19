@@ -13,4 +13,11 @@
             </argument>
         </arguments>
     </type>
+
+    <!-- Plugin to inject category X-Robots-Tag directives -->
+    <type name="Hryvinskyi\SeoRobotsFrontend\Model\GetXRobotsByRequest">
+        <plugin name="category_x_robots_provider"
+                type="Hryvinskyi\SeoRobotsCategoryFrontend\Plugin\GetXRobotsByRequestPlugin"
+                sortOrder="100"/>
+    </type>
 </config>
